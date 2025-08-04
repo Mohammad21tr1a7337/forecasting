@@ -1,9 +1,9 @@
+streamlit==1.35.0
 numpy==1.26.4
 pandas==2.2.2
 plotly==5.21.0
-prophet==1.1.5
-xarray==2023.12.0
 openpyxl==3.1.2
-streamlit==1.35.0
+xarray==2023.12.0
 pillow==10.2.0
-pystan==2.19.1.1  # prophet needs this
+pystan==2.19.1.1     # prophet depends on this
+prophet==1.1.5
