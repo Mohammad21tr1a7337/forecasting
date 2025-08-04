@@ -6,4 +6,4 @@ xarray==2023.12.0
 openpyxl==3.1.2
 streamlit==1.35.0
 pillow==10.2.0
-pystan==2.19.1.1  # Required backend for Prophet
+pystan==2.19.1.1  # prophet needs this
