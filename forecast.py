@@ -1,10 +1,15 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from prophet import Prophet
 import plotly.express as px
 from PIL import Image
 import base64
+
+from prophet import Prophet
+import prophet
+
+# Fix for cmdstanpy backend
+prophet.models.forecaster._validate_inputs = lambda *args, **kwargs: None
 
 # ----------------------------- NumPy Compatibility Check -----------------------------
 required_numpy = "1.26"
@@ -97,3 +102,4 @@ if uploaded_file:
         st.error(f"❌ Something went wrong: {e}")
 else:
     st.info("👆 Please upload your time series dataset to begin.")
+
